@@ -1,3 +1,4 @@
+
 <form name="formAltaConsulta" method="Post" action="altaConsulta.php" method="POST">
     <label for="">Pregunta</label>
     <input type="text" name="pregunta" id="pregunta"  class=""/><br>
