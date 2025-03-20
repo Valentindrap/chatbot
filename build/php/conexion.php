@@ -21,7 +21,7 @@ define("DB","chatbot_db"); // El nombre de la base de datos con la que se va a t
         // Aquí estamos configurando PDO para que maneje los errores como excepciones. Esto significa que si ocurre un error de base de datos,
         // el script lanzará una excepción que podemos manejar con un bloque try-catch.
         
-        echo "Conexion exitosa"; // Si la conexión es exitosa, se muestra el mensaje "Conexion exitosa".
+        //echo "Conexion exitosa"; // Si la conexión es exitosa, se muestra el mensaje "Conexion exitosa".
         
     }   catch(PDOException $e){
         // Si ocurre un error al intentar conectarse a la base de datos, se lanza una excepción.
