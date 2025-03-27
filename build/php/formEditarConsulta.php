@@ -1,5 +1,15 @@
-<link rel="stylesheet" href="../css/altaConsulta.css">
-<form name="formAltaConsulta" method="Post" action="altaConsulta.php" method="POST">
+<?php
+    include ("conexion.php");
+
+    $sql="SELECT * FROM consultas WHERE id=(:id)";
+    $stmt= $pdo->prepare($sql);
+    if($stmt->execute(['id'=> $_GET['ID'] ])){
+?>
+
+<form name="formEditarConsulta" method="Post" action="editarConsulta.php" method="POST">
+    <label>Id:</label>
+    <input type="text" name="id" readonly/> <br>
+
     <label for="">Pregunta</label>
     <input type="text" name="pregunta" id="pregunta"  class=""/><br>
     <label for="">Respuesta</label>
@@ -14,3 +24,9 @@
     </select> <br>
     <input type="submit" value="Enviar solicitud">
 </form>
+
+<?php
+    }else {
+        echo "el registro seleccionado no existe";
+    }
+?>

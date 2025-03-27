@@ -11,3 +11,6 @@ if ($stmt->execute([
 }else{
     echo "error al cargar datos";
 }
+
+echo "<br/> <a name='volver' href='listarConsultas.php'>Volver</a>";
+?>
