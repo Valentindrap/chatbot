@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../css/altaConsulta.css">
-<form name="formAltaConsulta" method="Post" action="altaConsulta.php" method="POST">
+<form name="formAltaConsulta" action="altaConsulta.php" method="POST">
     <label for="">Pregunta</label>
     <input type="text" name="pregunta" id="pregunta"  class=""/><br>
     <label for="">Respuesta</label>
