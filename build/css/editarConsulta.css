@@ -7,21 +7,6 @@ body {
     text-align: center;
 }
 
-a.volver {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-a.volver:hover {
-    background-color: #45a049;
-}
-
 /* Success Message */
 .success {
     background-color: #4CAF50;
@@ -31,6 +16,7 @@ a.volver:hover {
     width: 80%;
     border-radius: 5px;
     font-size: 18px;
+    text-align: center;
 }
 
 /* Error Message */
@@ -42,9 +28,27 @@ a.volver:hover {
     width: 80%;
     border-radius: 5px;
     font-size: 18px;
+    text-align: center;
 }
 
-/* Responsive Design for Messages */
+/* Volver Link */
+.volver-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.volver-link:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .success, .error {
         width: 90%;

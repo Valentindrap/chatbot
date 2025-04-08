@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/altaConsulta.css">
+<link rel="stylesheet" href="../css/formAltaConsulta.css">
 <form name="formAltaConsulta" action="altaConsulta.php" method="POST">
     <label for="">Pregunta</label>
     <input type="text" name="pregunta" id="pregunta"  class=""/><br>
@@ -14,3 +14,7 @@
     </select> <br>
     <input type="submit" value="Enviar solicitud">
 </form>
+
+<div class="volverdiv">
+<a href='listarConsultas.php' class='volver-link'>Ver lista de consultas</a>
+</div>

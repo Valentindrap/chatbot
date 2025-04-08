@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.consulta {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: left;
+}
+
+.consulta p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.consulta b {
+    color: #333;
+}
+
+a.editar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+a.editar:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .consulta {
+        width: 90%;
+    }
+}
+
+/* Volver Link */
+.volver-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.volver-link:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+.volver-link:active {
+    background-color: #004085; /* Azul aún más oscuro al hacer clic */
+}
+
+@media (max-width: 768px) {
+    .volver-link {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+}
