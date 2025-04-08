@@ -11,10 +11,10 @@ if ($stmt->execute([
     "categoria" => $_POST["categoria"],
     "id" => $_POST["id"]
 ])) {
-    echo "<div class='success'>Registro actualizado completamente</div>";
+    echo "<div class='mensaje success'>✅ Registro actualizado completamente</div>";
 } else {
-    echo "<div class='error'>Error al actualizar los datos</div>";
+    echo "<div class='mensaje error'>❌ Error al actualizar los datos</div>";
 }
 
-echo "<br/><a class='volver-link' href='listarConsultas.php'>Volver</a>";
+echo "<a class='volver-link' href='listarConsultas.php'>Volver a la lista de consultas</a>";
 ?>

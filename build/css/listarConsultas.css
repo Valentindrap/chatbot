@@ -1,81 +1,120 @@
-/* General Styles */
+/* Fondo y tipografía general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #3e3eec, #6f47b2);
+    color: #fff;
     margin: 0;
-    padding: 0;
+    padding: 40px;
+}
+
+/* Contenedor principal que agrupa la mascota y el contenido */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Estilo de la sección de la mascota */
+.mascota {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 30px;
+}
+
+.mascota img {
+    width: 100%;
+    height: auto;
+    max-width: 200px !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Globo de diálogo de la mascota */
+.mensaje-chatbot {
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 12px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 150px;
     text-align: center;
 }
 
+/* Contenido donde se listan las consultas */
+.contenido {
+    max-width: 700px;
+    width: 100%;
+}
+
+/* Botón para volver */
+.volver-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #3e3eec;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.volver-link:hover {
+    background-color: #2d2dbb;
+}
+
+/* Cada consulta individual */
 .consulta {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    width: 80%;
-    text-align: left;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
 .consulta p {
     margin: 10px 0;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
-.consulta b {
-    color: #333;
+/* Botones de editar y borrar */
+.acciones {
+    margin-top: 15px;
 }
 
-a.editar {
+.editar, .borrar {
     display: inline-block;
-    margin-top: 10px;
     padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-a.editar:hover {
-    background-color: #45a049;
-}
-
-@media (max-width: 768px) {
-    .consulta {
-        width: 90%;
-    }
-}
-
-/* Volver Link */
-.volver-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF; /* Color de fondo azul */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 20px;
-    text-align: center;
+    margin-right: 10px;
+    transition: background-color 0.3s;
 }
 
-.volver-link:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
-    transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+.editar {
+    background-color: #3eb489;
+    color: #fff;
 }
 
-.volver-link:active {
-    background-color: #004085; /* Azul aún más oscuro al hacer clic */
+.editar:hover {
+    background-color: #2a967f;
 }
 
-@media (max-width: 768px) {
-    .volver-link {
-        padding: 12px 24px;
-        font-size: 18px;
-    }
+.borrar {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.borrar:hover {
+    background-color: #d32f2f;
 }

@@ -1,21 +1,41 @@
-<link rel="stylesheet" href="../css/listarConsultas.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Consultas</title>
+    <link rel="stylesheet" href="../css/listarConsultas.css">
+</head>
+<body>
 
-<a href='formAltaConsulta.php' class='volver-link'>Volver a cargar consultas</a>
+    <div class="container">
+        <div class="mascota">
+            <img src="../img/mascota-chatbot.png" alt="Chatbot">
+            <div class="mensaje-chatbot">¡Estas son tus consultas cargadas!</div>
+        </div>
 
-<?php
-//1- Conectamos con la base de datos
-include ("conexion.php");
-//2- Armamos consulta
-$sql = "SELECT * FROM consultas";
-//3- Ejecutamos la consulta
-$consultas = $stmt = $pdo->query($sql);
-//4- Mostramos datos provenientes de la base de datos
-foreach($consultas as $consulta){
-    echo "<div class='consulta'>";
-    echo "<p><b>Pregunta:</b> " . htmlspecialchars($consulta['pregunta']) . "</p>";
-    echo "<p><b>Respuesta:</b> " . htmlspecialchars($consulta['respuesta']) . "</p>";
-    echo "<p><b>Categoria:</b> " . htmlspecialchars($consulta['categoria']) . "</p>";
-    echo "<a class='editar' href='formEditarConsulta.php?id=".$consulta['id']."'>Editar</a>";
-    echo "</div>";
-}
-?>
+        <div class="contenido">
+            <a href='formAltaConsulta.php' class='volver-link'>➕ Volver a cargar consultas</a>
+
+            <?php
+            include("conexion.php");
+
+            $sql = "SELECT * FROM consultas";
+            $consultas = $pdo->query($sql);
+
+            foreach ($consultas as $consulta) {
+                echo "<div class='consulta'>";
+                echo "<p><b>📝 Pregunta:</b> " . htmlspecialchars($consulta['pregunta']) . "</p>";
+                echo "<p><b>✅ Respuesta:</b> " . htmlspecialchars($consulta['respuesta']) . "</p>";
+                echo "<p><b>📂 Categoría:</b> " . htmlspecialchars($consulta['categoria']) . "</p>";
+                echo "<div class='acciones'>";
+                echo "<a class='editar' href='formEditarConsulta.php?id=" . $consulta['id'] . "'>✏ Editar</a>";
+                echo "<a class='borrar' href='eliminarConsulta.php?id=" . $consulta['id'] . "'>🗑 Eliminar</a>";
+                echo "</div>";
+                echo "</div>";
+            }
+            ?>
+        </div>
+    </div>
+
+</body>
+</html>
