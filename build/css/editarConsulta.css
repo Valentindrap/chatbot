@@ -9,7 +9,6 @@ body {
     align-items: center;
 }
 
-/* Mensajes de éxito o error */
 .mensaje {
     font-size: 1.2rem;
     padding: 20px;
@@ -32,7 +31,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Botón de volver */
+
 .volver-link {
     display: inline-block;
     background-color: #3e3eec;

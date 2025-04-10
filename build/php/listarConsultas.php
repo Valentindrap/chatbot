@@ -37,5 +37,17 @@
         </div>
     </div>
 
+    <footer>
+        <div>
+            <img src="../img/logo.png" style="width: 100px; height: 100px;"/>
+        </div>
+        <div>
+            <p>Integrantes: Valentin Drapanti - Agustin Casado</p>
+            <p>&copy; Grupo N°1</p>
+            <p>7I - Programacion III</p>
+        </div>
+        <div></div>
+    </footer>
+
 </body>
 </html>
