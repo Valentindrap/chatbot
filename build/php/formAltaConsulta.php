@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Alta de Consulta</title>
     <link rel="stylesheet" href="../css/formAltaConsultas.css">
+    <link rel="icon" href="../img/mascota-chatbot.png">
 </head>
 <body>
     <div class="chatbot-container">

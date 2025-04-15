@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../css/editarConsulta.css">
+<link rel="icon" href="build/img/mascota-chatbot.png">
 <?php
 include("conexion.php");
 

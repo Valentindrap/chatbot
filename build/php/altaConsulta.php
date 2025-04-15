@@ -1,5 +1,6 @@
 
 <link rel="stylesheet" href="../css/altaConsulta.css">
+<link rel="icon" href="../img/mascota-chatbot.png">
  
     <div class="resultado-container">
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Listado de Consultas</title>
     <link rel="stylesheet" href="../css/listarConsultas.css">
+    <link rel="icon" href="../img/mascota-chatbot.png">
 </head>
 <body>
 
@@ -15,6 +16,7 @@
 
         <div class="contenido">
             <a href='formAltaConsulta.php' class='volver-link'>➕ Volver a cargar consultas</a>
+            <a href='../../index.php' class='volver-link'>↩️ Volver a inicio</a>
 
             <?php
             include("conexion.php");

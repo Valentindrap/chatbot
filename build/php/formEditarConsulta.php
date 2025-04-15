@@ -15,6 +15,7 @@ if ($consulta = $stmt->fetch(PDO::FETCH_ASSOC)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Consulta</title>
     <link rel="stylesheet" href="../css/formEditarConsultas.css">
+    <link rel="icon" href="../img/mascota-chatbot.png">
 </head>
 <body>
 
