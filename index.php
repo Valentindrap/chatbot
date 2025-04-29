@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Gestión de Consultas VegeBot777</title>
     <link rel="stylesheet" href="build/css/index.css">
+    <link rel="stylesheet" href="build/css/chat.css">
     <link rel="icon" href="build/img/mascota-chatbot.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+
 </head>
 <body>
     <header>
@@ -24,22 +28,52 @@
     <main>
         <section>
             <h2>Conoce a nuestro Chatbot</h2>
-            <p>Chatbot "VegeBot777" sabe demasiado sobre la informatica</p>
+            <p>Chatbot "VegeBot777" sabe demasiado sobre la informática</p>
             <img src="build/img/mascota-chatbot.png" alt="Imagen del chatbot" style="width: 200px; height: 200px;">
-            <p>Aqui se podra editar las consultas del chatbot y verlas</p>
+            <p>Aquí se podrá editar las consultas del chatbot y verlas</p>
         </section>
+
+        <div class="wrapper">
+            <div class="title">Chatea con VegeBot777</div>
+
+            <div class="form">
+                <div class="bot-inbox inbox">
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="msg-header">
+                        <p>Hola Guapisimo, ¿cómo puedo ayudarte?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-field">
+                <div class="input-data">
+                    <input id="data" type="text" placeholder="Escribe algo aquí.." required>
+                    <button id="send-btn">Enviar</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div>
-            <img src="build/img/logo.png" style="width: 100px; height: 100px;"/>
+            <img src="build/img/logo.png" style="width: 100px; height: 100px;">
         </div>
         <div>
-            <p>Integrantes: Valentin Drapanti - Agustin Casado</p>
+            <p>Integrantes: Valentín Drapanti - Agustín Casado</p>
             <p>&copy; Grupo N°1</p>
-            <p>7I - Programacion III</p>
+            <p>7I - Programación III</p>
         </div>
         <div></div>
     </footer>
 </body>
+<script>
+    $(document).ready(function(){
+        $("send-btn".on("click", function(){
+
+        });
+        
+    });
+</script>
 </html>
