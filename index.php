@@ -70,8 +70,29 @@
 </body>
 <script>
     $(document).ready(function(){
-        $("send-btn".on("click", function(){
+        $("#send-btn").on("click", function() {
+            $valor= $("#data").val(); //tomo el valor guardado en el input y lo guardo el la variable valor
+            $msg= '<div class="user-inbox inbox> <div class "msg-header"><p>'+$valor+'</p></div></div>'
+            $(".form").append($msg);
+            $("#data").val('');
+        
+            //iniciamos el codigo ajax
+            $.ajax ({
+                url: 'build/php/respuesta.php',
+                type:'POST',
+                data: 'text='+ $valor,
+                success: function(result){
+                    //armo el html con la respuesta que viene del servidor
+                    $respuesta='<div class="bot-inbox inbox">'+
+                        '<div class="icon"><i class="fas fa-user"></i></div><div class="msg-header">'+
+                        '<p>' + result +'</p> </div> </div>';
+                    //lo agrego dentro del div cuya clase es form
+                    $(".form").append($respuesta);
+                    //cuando el chat baja se desplaza haci el final    
+                    $(".form").scrollTop($(".form")[0].scrollHeight);
 
+                }
+            });
         });
         
     });
