@@ -72,7 +72,7 @@
     $(document).ready(function(){
         $("#send-btn").on("click", function() {
             $valor= $("#data").val(); //tomo el valor guardado en el input y lo guardo el la variable valor
-            $msg= '<div class="user-inbox inbox> <div class "msg-header"><p>'+$valor+'</p></div></div>'
+            $msg= '<div class="user-inbox inbox> <div class="msg-header"><p class="TextoEnviado">'+$valor+'</p></div></div>'
             $(".form").append($msg);
             $("#data").val('');
         

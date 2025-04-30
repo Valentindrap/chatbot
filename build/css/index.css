@@ -161,3 +161,15 @@ footer p {
     font-weight: 300;
     margin: 5px;
 }
+
+.TextoEnviado{
+    color: white;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    background: #c81cfd;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    word-break: break-all;
+}

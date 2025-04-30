@@ -27,7 +27,9 @@ html,body{
 ::-webkit-scrollbar-thumb:hover{
     background: #ccc;
 }
-
+.user-inbox{
+    align-items: center;
+}
 .wrapper{
     width: 370px;
     background: #fff;
